@@ -1,10 +1,36 @@
 // 1) crie uma função que receba uma string e devolva seu valor em letras maiúsculas, separadas por um espaço. Exemplo: 'banana' -> 'B A N A N A'
 
+
 // 2) crie uma função que receba um número e devolva uma soma progressiva. Por exemplo, recebendo o número 5, a função deve retornar 15, ou seja, o resultado de 1 + 2 + 3 + 4 + 5. 
+
+function soma (num){
+    let total = 0
+    for (let i = 0; let <= num; i++) {
+        total = total + i
+    } return total
+}
+
+console.log ("Loop soma", soma(5))
 
 // 3) crie um programa que pergunta seu nome. Depois que digitar o nome, o programa deverá responder 'Olá [nome]'.
 // Enquanto digitar qualquer palavra, print o que foi digitado mas avise que, para sair, é só dizer 'Tchau'.
 // O programa vai dizer 'Tchau [nome]' e finalizar.
+
+const input = require("readline-sync")
+
+function imprimeComandos() {
+    let nome = input.question ("Qual o seu nome? ")
+    console.log (`Olá, ${nome}`)
+    let texto = ' '
+    do {
+        texto = input.question ("Digite algo ou Tchau para sair: ")
+        console.log (`Você digitou: ${texto}`)
+    } while (texto != 'Tchau')
+    console.log (`Tchau, ${nome}!`)
+}
+
+imprimeComandos ()
+
 
 // 4) crie uma função que receba dois números e exiba no console uma contagem regressiva entre else, contando de dois em dois números. Por exemplo: recebendo o número inicial 20 e o final 0, a função deverá imprimir em sequência 20 18 16 14 12 10 8 6 4 2 0.
 
