@@ -4,6 +4,34 @@
 
 // 2) para esse exercício, as funções de multiplicação e divisão não devem aceitar valores iguais a 0 (zero). Adicione esta lógica nas funções.
 
+function soma (numero1, numero2){
+    return numero1 + numero2
+    }
+
+function subtracao (numero1, numero2) {
+   return numero1 - numero2
+}
+
+function multiplicacao (numero1, numero2) {
+    if (numero1 === 0 || numero2 === 0) {
+        return "nao queremos zero"
+    }
+    return numero1 * numero2
+}
+
+function divisao (numero1, numero2) {
+    if (numero1 === 0 || numero2 === 0) {
+        return "nao queremos zero"
+    }
+    return numero1 / numero2
+}
+
+console.log (soma(2,2))
+console.log (subtracao(9,5))
+console.log (multiplicacao(9,4))
+console.log (divisao(17,2))
+
+
 // 3) crie uma função que chame qualquer uma das funções acima e imprima o resultado no formato de String. Exemplo: "O resultado da operação é X" (sendo X o valor do resultado).
 
 // 4) utilizando as funções de soma e multiplicação dos exercícios anteriores, crie uma função que resolva a conta 36325 * (9824 + 777).
