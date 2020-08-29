@@ -14,6 +14,7 @@ function soma(num) {
   }
   return total
 }
+console.log (soma(4))
 
 // 3) crie um programa que pergunta seu nome. Depois que digitar o nome, o programa deverá responder 'Olá [nome]'.
 // Enquanto digitar qualquer palavra, print o que foi digitado mas avise que, para sair, é só dizer 'Tchau'.
