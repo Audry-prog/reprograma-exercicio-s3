@@ -44,6 +44,8 @@ function contagemRegressiva(numInicial, numFinal) {
   }
 }
 
+contagemRegressiva(20, 0)
+
 // 5) crie uma função que receba um número e imprima no console de 0 até o número informado. Além disso, cada vez que imprimir o número, informe se é par ou ímpar. Exemplo: recebendo 5, deve imprimir: "0 é par", "1 é ímpar", "2 é par", "3 é ímpar", "4 é par", "5 é ímpar". 
 
 // 6) crie uma função que receba um número inteiro e imprima os números no console em ordem, de 1 até o número. Porém, para todos os números que forem múltiplos de 3, imprima na tela "banana" ao invés do número; para os números múltiplos de 5, imprima "biscoito". Para números múltiplos de 3 e 5, imprima "biscoito de banana". Exemplo, recebendo 15 o resultado será:
@@ -62,6 +64,22 @@ function contagemRegressiva(numInicial, numFinal) {
 // 13
 // 14
 // biscoito de banana
+
+function biscoitodeBanana(num){
+  let total = 1
+  
+  for (let i = 1; i <= num; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      console.log(`Biscoito de Banana`)
+    } else if (i % 3 == 0) {
+      console.log(`Banana`)
+    } else if (1 % 5 == 0) {
+      console.log(`Biscoito`)
+    } else {
+      console.log (i)
+    }
+  }
+} console.log(biscoitodeBanana(20))
 
 // 7) crie uma função que receba um número positivo inteiro, itere de 1 ao número e some SOMENTE todos os números múltiplos de 3 OU 5. Por exemplo, recebendo 15, o valor retornado deverá ser 60, ou seja, a soma de todos os números múltiplos de 3 ou 5 entre 0 e 15 (3 + 5 + 6, etc).
 

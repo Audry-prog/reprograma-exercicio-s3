@@ -59,7 +59,7 @@ function recebeTresParametros(param1, param2, param3) {
   }
 }
 
-// console.log(recebeTresParametros(2, 2, 2)) // 2
+console.log(recebeTresParametros(2, 2, 2))
 
 
 /////////////////////////
@@ -67,6 +67,7 @@ function recebeTresParametros(param1, param2, param3) {
 // imprimir na tela os números de 0 a 10
 
 //   inicial         enquanto      depois de cada loop
+
 for (let numero = 0; numero <= 10; numero++) {
   console.log("sei lá quantas vezes vai rodar")
 }
