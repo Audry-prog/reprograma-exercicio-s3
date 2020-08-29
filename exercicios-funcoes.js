@@ -1,3 +1,5 @@
+const input = require('readline-sync')
+
 // **Você pode dar os nomes que quiser para as funções e variáveis, apenas lembre que eles devem ser semânticos :)
 
 // 1) crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão), cada uma delas recebendo 2 números como parâmetros e retornando o resultado
@@ -70,12 +72,15 @@ console.log(divideSemZero(10, 2))
 // 2. Se qualquer um dos três números não forem informados, a função deve retornar a string: "Preencha todos os valores corretamente!"
 // 3. O retorno da função deve ser a multiplicação dos 3 números, somando `2` ao resultado da multiplicação. DICA: pesquise o que aparece no console.log caso uma função precise de um parâmetro, mas não receba nenhum.  
 
-function recebeTresParametro (par1, par2, par3) {
+function recebeTresParametro (par1, par2, par3){
   if (par1 === undefined || par2 === undefined || par3 === undefined) {
     return "Preencha todos os valores corretamente!"
-  } return ((par1 * par2 * par3) + 2)
+  } else {
+    return (par1 * par2 * par3) + 2
 }
-console.log(bla(2, 4, 6))
+
+}
+console.log(recebeTresParametro(2, 4, 6))
 
 
 // 7) Crie uma função com as seguintes características:
@@ -101,8 +106,23 @@ console.log(recebeTresParametros(2, 2, 2)) // 2
 
 // 8) crie uma função que receba uma string como parâmetro, e retorne essa mesma string invertida. Por exemplo, recebendo "reprograma", vai retornar "amargorper". Para isso, você vai ter que pesquisar como usar JavaScript para inverter uma string.
 
+function palavraInversa(strVar) {
+  strVar = input.question("Digite uma palavra: ")
+  console.log(strVar.reverse())
+}
+ palavraInversa()
+
 // 9) agora que você já sabe reverter strings, crie uma função que receba uma string, verifique se é um palíndromo e retorne true ou false. Exemplo de palíndromo: "arara".
 
 // 10) crie uma função que receba duas strings como parâmetros e retorne a string com a maior quantidade de caracteres. Por exemplo, se passarmos como parâmetro "banana" e "chocolate" a função deve retornar "chocolate"
 
-
+function maiorPalavra(str1 , str2){
+  let palavra1 = str1.lenght
+  let palavra2 = str2.lenght
+  if (palavra1 > palavra2){
+    console.log(str1)
+  }else {
+    console.log(str2)
+  }
+} 
+maiorPalavra('Banana','Chocolate')

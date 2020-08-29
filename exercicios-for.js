@@ -2,7 +2,11 @@ const input = require('readline-sync')
 
 // 1) crie uma função que receba uma string e devolva seu valor em letras maiúsculas, separadas por um espaço. Exemplo: 'banana' -> 'B A N A N A'
 
-
+function recebePalavra(strVar){
+ strVar = input.question("Digite uma palavra: ")
+ console.log((strVar.toUpperCase()).split(''))
+}
+recebePalavra()
 
 // 2) crie uma função que receba um número e devolva uma soma progressiva. Por exemplo, recebendo o número 5, a função deve retornar 15, ou seja, o resultado de 1 + 2 + 3 + 4 + 5. 
 
