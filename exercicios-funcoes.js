@@ -78,11 +78,6 @@ function recebeTresParametro (par1, par2, par3) {
 console.log(bla(2, 4, 6))
 
 
-
-
-
-
-
 // 7) Crie uma função com as seguintes características:
 // 1. A função deve receber 3 parâmetros.
 // 2. Se somente um parâmetro for passado, retorne o valor do parâmetro.

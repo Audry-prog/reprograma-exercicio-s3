@@ -16,6 +16,9 @@
 // Exemplo:
 // function contaVogais("carro") // 2 
 
+
+
+
 // Use estruturas de controle para inverter uma array de inteiros. A função deverá receber uma array de números e retornar uma array com a ordem dos elementos invertida. Não é válido utilizar `arr.reverse()`.
 // Exemplo:
 // function inverteArray([1, 2, 3, 4]) // [4, 3, 2, 1]

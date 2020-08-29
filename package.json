@@ -19,5 +19,6 @@
   "homepage": "https://github.com/reprograma/on7-porto-s3-logica#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
-  }
+  },
+  "devDependencies": {}
 }
