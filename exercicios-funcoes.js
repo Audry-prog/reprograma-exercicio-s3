@@ -2,6 +2,7 @@ const input = require('readline-sync')
 
 // **Você pode dar os nomes que quiser para as funções e variáveis, apenas lembre que eles devem ser semânticos :)
 // 1) crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão), cada uma delas recebendo 2 números como parâmetros e retornando o resultado
+// ls -lha (lista todos os arquivos, inclusive os ocultos)
 
 function soma(numero1, numero2) {
   return numero1 + numero2
