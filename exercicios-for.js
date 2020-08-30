@@ -160,9 +160,9 @@ function estrelaInversa(num){
   let espaco = ' '
   let resposta = ' '
   for(let i = 0; i <= num; i++){
-    for(let j = num - i; j > 1; j--){
+    for(let j = num - i; j >= 1; j--){
       espaco += ' '
-} resposta += '*'
+    } resposta += '*'
   console.log(espaco + resposta)
   espaco = ' '
   }

@@ -1,12 +1,9 @@
 // 1) Calcule a potência de 2 elevado a um número específico. Deve usar um loop (não usar `Math.pow()`).
 // Exemplo:
-// potenciaDeDois(10) // 1024
+//potenciaDeDois(10) // 1024
 
 // 2) Crie uma função que receba três números e determine se um número é maior que outro.
-// Exemplo:
-// retornaNumMaior(10, 20, 30) // 30
-
-// ***************
+// Exemplo: retornaNumMaior(10, 20, 30)
 
 // DESAFIOS!
 
