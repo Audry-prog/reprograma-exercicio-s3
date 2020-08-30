@@ -61,11 +61,23 @@ console.log(divideSemZero(10, 2))
 
 // 3) crie uma função que chame internamente qualquer uma das funções acima e imprima o resultado no formato de String. Exemplo: "O resultado da operação é X" (sendo X o valor do resultado).
 
+function chamaFuncao(num1 , num2) {
+  console.log(`O resultado da operação é ${multiplicaSemZero(num1, num2)}`)
+}
 
+chamaFuncao(10, 2)
 
 // 4) utilizando as funções de soma e multiplicação já feitas nos exercícios anteriores, crie uma nova função que chame essas funções e resolva a conta 36325 * (9824 + 777).
 
+
+
 // 5) crie uma função que receba dois números e gere outros dois números aleatórios com valores entre eles. Exemplo: uma função que receba (1, 100) deve gerar dois números aleatórios entre 1 e 100 (por exemplo, 54 e 12). Em seguida, some estes números e devolva uma string com o resultado no formato: "a soma de [número aleatório] e [número aleatório] é XXX". Você vai ter que pesquisar o método do JS para gerar números aleatórios, `Math.random()` e como utilizá-lo. 
+
+
+
+
+
+
 
 // 6) Crie uma função com as seguintes características:
 // 1. A função deve receber 3 números
@@ -81,7 +93,6 @@ function recebeTresParametro (par1, par2, par3){
 
 }
 console.log(recebeTresParametro(2, 4, 6))
-
 
 // 7) Crie uma função com as seguintes características:
 // 1. A função deve receber 3 parâmetros.
@@ -107,13 +118,20 @@ console.log(recebeTresParametros(2, 2, 2)) // 2
 // 8) crie uma função que receba uma string como parâmetro, e retorne essa mesma string invertida. Por exemplo, recebendo "reprograma", vai retornar "amargorper". Para isso, você vai ter que pesquisar como usar JavaScript para inverter uma string.
 
 function palavraInversa(strVar) {
-  strVar = input.question("Digite uma palavra: ")
-  console.log(strVar.reverse())
+  strVar = input.question("Ja viu uma palavra escrita inversamente? Entao, digite uma palavra: ")
+  console.log (((strVar.split('')).reverse()).join(''))
 }
  palavraInversa()
 
 // 9) agora que você já sabe reverter strings, crie uma função que receba uma string, verifique se é um palíndromo e retorne true ou false. Exemplo de palíndromo: "arara".
 
+function checarPalindrome(strVar){
+  
+  let invertida = strVar.split('').reverse().join('')
+  return strVar === invertida
+}
+console.log(checarPalindrome("arara"))
+  
 // 10) crie uma função que receba duas strings como parâmetros e retorne a string com a maior quantidade de caracteres. Por exemplo, se passarmos como parâmetro "banana" e "chocolate" a função deve retornar "chocolate"
 
 function maiorPalavra(str1 , str2){

@@ -2,11 +2,13 @@ const input = require('readline-sync')
 
 // 1) crie uma função que receba uma string e devolva seu valor em letras maiúsculas, separadas por um espaço. Exemplo: 'banana' -> 'B A N A N A'
 
-function recebePalavra(strVar){
- strVar = input.question("Digite uma palavra: ")
- console.log((strVar.toUpperCase()).split(''))
+function espaco(palavra){
+let resultado = ''
+for (let x = 0; x < palavra.length; x++){
+resultado += (`${palavra[x].toUpperCase()} `)
+ } return resultado
 }
-recebePalavra()
+console.log(espaco('banana'))
 
 // 2) crie uma função que receba um número e devolva uma soma progressiva. Por exemplo, recebendo o número 5, a função deve retornar 15, ou seja, o resultado de 1 + 2 + 3 + 4 + 5. 
 
@@ -26,9 +28,8 @@ console.log (soma(4))
 
 function imprimeComandos() {
 
-  let nome = input.question('digite seu nome: ')
+  let nome = input.question('Digite seu nome: ')
   console.log(`Olá, ${nome}`)
-
   let texto = ''
   
   do {
@@ -38,6 +39,7 @@ function imprimeComandos() {
 
   console.log(`Tchau, ${nome}!`)
 }
+imprimeComandos()
 
 // 4) crie uma função que receba dois números e exiba no console uma contagem regressiva entre eles, contando de dois em dois números. Por exemplo: recebendo o número inicial 20 e o final 0, a função deverá imprimir em sequência 20 18 16 14 12 10 8 6 4 2 0.
 
@@ -51,6 +53,16 @@ function contagemRegressiva(numInicial, numFinal) {
 contagemRegressiva(20, 0)
 
 // 5) crie uma função que receba um número e imprima no console de 0 até o número informado. Além disso, cada vez que imprimir o número, informe se é par ou ímpar. Exemplo: recebendo 5, deve imprimir: "0 é par", "1 é ímpar", "2 é par", "3 é ímpar", "4 é par", "5 é ímpar". 
+
+function recebeNum(num){
+  for ( i = 0 ; i<= num; i++)
+  if (i % 2 == 0){
+    console.log(i ,' é par.')
+  }else {
+    console.log(i ,' é ímpar.')
+  }
+} 
+console.log(recebeNum(15))
 
 // 6) crie uma função que receba um número inteiro e imprima os números no console em ordem, de 1 até o número. Porém, para todos os números que forem múltiplos de 3, imprima na tela "banana" ao invés do número; para os números múltiplos de 5, imprima "biscoito". Para números múltiplos de 3 e 5, imprima "biscoito de banana". Exemplo, recebendo 15 o resultado será:
 // 1
@@ -103,6 +115,21 @@ console.log(somaTresOuCinco(15))
 
 // 8) altere a função acima para, ao invés de somar múltiplos de 5 ou 3, fazer isso com qualquer número de 1 a 9. Os números serão recebidos via parâmetro de função, por exemplo: `function somaMultiplos(num, multiplo1, multiplo2)` pode ser chamada com os valores `somaMultiplos(100, 2, 4) e verificar os números múltiplos de 2 e 4. Extra: antes de seguir com o cálculo, verificar se os números recebidos estão mesmo entre 1 e 9; caso não estejam, imprimir o aviso "informe múltiplos de 1 a 9" e encerrar o programa.
 
+function somaMultiplos(num, multiplo1, multiplo2){
+  if (multiplo1 < 1 || multiplo2 > 9){
+    return 'Digite um número entre 1 e 9'
+  }
+  let soma = 0
+  
+  for(let i = 0; i <= num; i++){
+    if (i % multiplo1 === 0 || i % multiplo2 === 0) {
+      soma += i
+    }
+  }
+  return soma
+}
+console.log(somaMultiplos(100,2,4))
+
 // 9) crie uma função que receba um número qualquer devolva o seguinte padrão como resultado (inclusive com os espaços). Por exemplo, caso receba o número 5 como parâmetro:
 // *
 // **
@@ -117,7 +144,6 @@ function escadinha(num) {
     console.log(estrela)
   }
 }
-
 escadinha(10)
 
 // DESAFIO EXTRA: refaça o exercício acima, porém agora com o seguinte padrão:
@@ -129,10 +155,16 @@ escadinha(10)
 
 // i = 0
 // j = 0
-for (let i = 2; i < 10; i++) {
-  
-  for (let j = 10; j < 10; j++) {
-    // resolver aqui
-  }
 
-}
+function estrelaInversa(num){
+  let espaco = ' '
+  let resposta = ' '
+  for(let i = 0; i <= num; i++){
+    for(let j = num - i; j > 1; j--){
+      espaco += ' '
+} resposta += '*'
+  console.log(espaco + resposta)
+  espaco = ' '
+  }
+} 
+estrelaInversa(10)
