@@ -69,7 +69,23 @@ chamaFuncao(10, 2)
 
 // 4) utilizando as funções de soma e multiplicação já feitas nos exercícios anteriores, crie uma nova função que chame essas funções e resolva a conta 36325 * (9824 + 777).
 
+function chamaSomaMultiplicacao(a, b, c) {
+  e = soma(b, c)
+  return multiplicacao(a, e)
+}
+
+console.log(chamaSomaMultiplicacao(36325, 9824, 777))
+
 // 5) crie uma função que receba dois números e gere outros dois números aleatórios com valores entre eles. Exemplo: uma função que receba (1, 100) deve gerar dois números aleatórios entre 1 e 100 (por exemplo, 54 e 12). Em seguida, some estes números e devolva uma string com o resultado no formato: "a soma de [número aleatório] e [número aleatório] é XXX". Você vai ter que pesquisar o método do JS para gerar números aleatórios, `Math.random()` e como utilizá-lo. 
+
+function somaNumAleatorios(a, b) {
+  num1 = Math.random() * (b - a) + a
+  num2 = Math.random() * (b - a) + a
+  total = num1 + num2
+  return `A soma de ${num1.toFixed(2)} e ${num2.toFixed(2)} é ${total.toFixed(2)}`
+}
+
+console.log(somaNumAleatorios(2, 4))
 
 // 6) Crie uma função com as seguintes características:
 // 1. A função deve receber 3 números
