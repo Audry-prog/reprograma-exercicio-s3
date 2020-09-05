@@ -1,10 +1,5 @@
 const input = require('readline-sync')
 
-=======
-
-// **Você pode dar os nomes que quiser para as funções e variáveis, apenas lembre que eles devem ser semânticos :)
-
-
 // **Você pode dar os nomes que quiser para as funções e variáveis, apenas lembre que eles devem ser semânticos :)
 // 1) crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão), cada uma delas recebendo 2 números como parâmetros e retornando o resultado
 // ls -lha (lista todos os arquivos, inclusive os ocultos)
@@ -101,9 +96,6 @@ console.log(divideSemZero(10, 2))
 
 // 3) crie uma função que chame internamente qualquer uma das funções acima e imprima o resultado no formato de String. Exemplo: "O resultado da operação é X" (sendo X o valor do resultado).
 
-
-function chamaFuncao(num1, num2) {
-=======
 function chamaFuncao(num1 , num2) {
 
   console.log(`O resultado da operação é ${multiplicaSemZero(num1, num2)}`)
@@ -136,9 +128,6 @@ console.log(somaNumAleatorios(2, 4))
 // 2. Se qualquer um dos três números não forem informados, a função deve retornar a string: "Preencha todos os valores corretamente!"
 // 3. O retorno da função deve ser a multiplicação dos 3 números, somando `2` ao resultado da multiplicação. DICA: pesquise o que aparece no console.log caso uma função precise de um parâmetro, mas não receba nenhum.  
 
-
-function recebeTresParametro(par1, par2, par3) {
-=======
 function recebeTresParametro (par1, par2, par3){
 
   if (par1 === undefined || par2 === undefined || par3 === undefined) {
@@ -147,11 +136,8 @@ function recebeTresParametro (par1, par2, par3){
     return (par1 * par2 * par3) + 2
 
   }
-=======
 }
 
-
-}
 console.log(recebeTresParametro(2, 4, 6))
 
 // 7) Crie uma função com as seguintes características:
@@ -188,7 +174,6 @@ palavraInversa()
 
 function checarPalindrome(strVar) {
 
-=======
   console.log (((strVar.split('')).reverse()).join(''))
 }
  palavraInversa()
@@ -216,9 +201,6 @@ function maiorPalavra(str1, str2) {
   }
 }
 maiorPalavra('Banana', 'Chocolate')
-
-
-=======
   
 // 10) crie uma função que receba duas strings como parâmetros e retorne a string com a maior quantidade de caracteres. Por exemplo, se passarmos como parâmetro "banana" e "chocolate" a função deve retornar "chocolate"
 
