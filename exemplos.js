@@ -27,7 +27,7 @@ do {
 //   inicial      12    true/false    o que acontece depois
 
 for (let numero = 50; numero >= 0; numero = numero - 5) {
-  console.log(numero)
+  // console.log(numero)
 }
 // VALOR DE numero:   13
 
@@ -36,7 +36,7 @@ for (let numero = 50; numero >= 0; numero = numero - 5) {
 //3 - QUANDO QUEREMOS QUE PARE
 
 const nome = "Juliana"
-console.log("console do nome", nome.length)
+// console.log("console do nome", nome.length)
 
 /////////////////////////
 
@@ -59,7 +59,7 @@ function recebeTresParametros(param1, param2, param3) {
   }
 }
 
-console.log(recebeTresParametros(2, 2, 2)) // 2
+console.log(recebeTresParametros(2, 2, 2))
 
 
 /////////////////////////
@@ -67,6 +67,7 @@ console.log(recebeTresParametros(2, 2, 2)) // 2
 // imprimir na tela os números de 0 a 10
 
 //   inicial         enquanto      depois de cada loop
+
 for (let numero = 0; numero <= 10; numero++) {
   console.log("sei lá quantas vezes vai rodar")
 }
