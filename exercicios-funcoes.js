@@ -1,8 +1,8 @@
 const input = require('readline-sync')
 
 // **Você pode dar os nomes que quiser para as funções e variáveis, apenas lembre que eles devem ser semânticos :)
-
 // 1) crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão), cada uma delas recebendo 2 números como parâmetros e retornando o resultado
+// ls -lha (lista todos os arquivos, inclusive os ocultos)
 
 function soma(numero1, numero2) {
   return numero1 + numero2
@@ -30,7 +30,7 @@ function operacoes(num1, num2, operacao) {
       return num1 * num2
     case "divisao":
       return num1 / num2
-    }
+  }
 }
 
 console.log(soma(2, 2))
@@ -69,7 +69,23 @@ chamaFuncao(10, 2)
 
 // 4) utilizando as funções de soma e multiplicação já feitas nos exercícios anteriores, crie uma nova função que chame essas funções e resolva a conta 36325 * (9824 + 777).
 
+function chamaSomaMultiplicacao(a, b, c) {
+  e = soma(b, c)
+  return multiplicacao(a, e)
+}
+
+console.log(chamaSomaMultiplicacao(36325, 9824, 777))
+
 // 5) crie uma função que receba dois números e gere outros dois números aleatórios com valores entre eles. Exemplo: uma função que receba (1, 100) deve gerar dois números aleatórios entre 1 e 100 (por exemplo, 54 e 12). Em seguida, some estes números e devolva uma string com o resultado no formato: "a soma de [número aleatório] e [número aleatório] é XXX". Você vai ter que pesquisar o método do JS para gerar números aleatórios, `Math.random()` e como utilizá-lo. 
+
+function somaNumAleatorios(a, b) {
+  num1 = Math.random() * (b - a) + a
+  num2 = Math.random() * (b - a) + a
+  total = num1 + num2
+  return `A soma de ${num1.toFixed(2)} e ${num2.toFixed(2)} é ${total.toFixed(2)}`
+}
+
+console.log(somaNumAleatorios(2, 4))
 
 // 6) Crie uma função com as seguintes características:
 // 1. A função deve receber 3 números
@@ -77,13 +93,15 @@ chamaFuncao(10, 2)
 // 3. O retorno da função deve ser a multiplicação dos 3 números, somando `2` ao resultado da multiplicação. DICA: pesquise o que aparece no console.log caso uma função precise de um parâmetro, mas não receba nenhum.  
 
 function recebeTresParametro (par1, par2, par3){
+
   if (par1 === undefined || par2 === undefined || par3 === undefined) {
     return "Preencha todos os valores corretamente!"
   } else {
     return (par1 * par2 * par3) + 2
+
+  }
 }
 
-}
 console.log(recebeTresParametro(2, 4, 6))
 
 // 7) Crie uma função com as seguintes características:
@@ -111,28 +129,32 @@ console.log(recebeTresParametros(2, 2, 2)) // 2
 
 function palavraInversa(strVar) {
   strVar = input.question("Ja viu uma palavra escrita inversamente? Entao, digite uma palavra: ")
-  console.log (((strVar.split('')).reverse()).join(''))
+
+  console.log(((strVar.split('')).reverse()).join(''))
 }
- palavraInversa()
+palavraInversa()
 
 // 9) agora que você já sabe reverter strings, crie uma função que receba uma string, verifique se é um palíndromo e retorne true ou false. Exemplo de palíndromo: "arara".
 
 function checarPalindrome(strVar){
   
+
   let invertida = strVar.split('').reverse().join('')
   return strVar === invertida
 }
 console.log(checarPalindrome("arara"))
-  
+
+
 // 10) crie uma função que receba duas strings como parâmetros e retorne a string com a maior quantidade de caracteres. Por exemplo, se passarmos como parâmetro "banana" e "chocolate" a função deve retornar "chocolate"
 
-function maiorPalavra(str1 , str2){
+function maiorPalavra(str1, str2) {
   let palavra1 = str1.lenght
   let palavra2 = str2.lenght
-  if (palavra1 > palavra2){
+  if (palavra1 > palavra2) {
     console.log(str1)
-  }else {
+  } else {
     console.log(str2)
   }
-} 
-maiorPalavra('Banana','Chocolate')
+}
+maiorPalavra('Banana', 'Chocolate')
+  

@@ -8,12 +8,9 @@
 // DESAFIOS!
 
 // Crie uma função que determina se um número é primo e retorne true ou false conforme o caso. Em matemática, um número primo é um número natural maior que 1 que é divisível somente por ele mesmo e 1. Utilize o operador módulo (`%`) para determinar se um número é divisível por outro.
-
 // Crie uma função que conte o número de vogais em uma `string` e retorne o número de vogais. 
 // Exemplo:
 // function contaVogais("carro") // 2 
-
-
 // Use estruturas de controle para inverter uma array de inteiros. A função deverá receber uma array de números e retornar uma array com a ordem dos elementos invertida. Não é válido utilizar `arr.reverse()`.
 // Exemplo:
 // function inverteArray([1, 2, 3, 4]) // [4, 3, 2, 1]
