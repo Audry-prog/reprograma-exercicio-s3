@@ -39,41 +39,6 @@ console.log(multiplicacao(4, 4))
 console.log(divisao(4, 2))
 console.log("CONSOLE LOG DA FUNCAO OPERAÇÕES", operacoes(2, 2, "subtracao"))
 
-function soma(numero1, numero2) {
-  return numero1 + numero2
-}
-
-function subtracao(numero1, numero2) {
-  return numero1 - numero2
-}
-
-function multiplicacao(numero1, numero2) {
-  return numero1 * numero2
-}
-
-function divisao(numero1, numero2) {
-  return numero1 / numero2
-}
-
-function operacoes(num1, num2, operacao) {
-  switch (operacao) {
-    case "soma":
-      return num1 + num2
-    case "subtracao":
-      return num1 - num2
-    case "multiplicacao":
-      return num1 * num2
-    case "divisao":
-      return num1 / num2
-    }
-}
-
-console.log(soma(2, 2))
-console.log(subtracao(4, 2))
-console.log(multiplicacao(4, 4))
-console.log(divisao(4, 2))
-console.log("CONSOLE LOG DA FUNCAO OPERAÇÕES", operacoes(2, 2, "subtracao"))
-
 // 2) para esse exercício, as funções de multiplicação e divisão não devem aceitar valores iguais a 0 (zero). Adicione esta lógica nas funções.
 
 function multiplicaSemZero(num1, num2) {
@@ -97,7 +62,6 @@ console.log(divideSemZero(10, 2))
 // 3) crie uma função que chame internamente qualquer uma das funções acima e imprima o resultado no formato de String. Exemplo: "O resultado da operação é X" (sendo X o valor do resultado).
 
 function chamaFuncao(num1 , num2) {
-
   console.log(`O resultado da operação é ${multiplicaSemZero(num1, num2)}`)
 }
 
@@ -172,14 +136,6 @@ palavraInversa()
 
 // 9) agora que você já sabe reverter strings, crie uma função que receba uma string, verifique se é um palíndromo e retorne true ou false. Exemplo de palíndromo: "arara".
 
-function checarPalindrome(strVar) {
-
-  console.log (((strVar.split('')).reverse()).join(''))
-}
- palavraInversa()
-
-// 9) agora que você já sabe reverter strings, crie uma função que receba uma string, verifique se é um palíndromo e retorne true ou false. Exemplo de palíndromo: "arara".
-
 function checarPalindrome(strVar){
   
 
@@ -202,16 +158,3 @@ function maiorPalavra(str1, str2) {
 }
 maiorPalavra('Banana', 'Chocolate')
   
-// 10) crie uma função que receba duas strings como parâmetros e retorne a string com a maior quantidade de caracteres. Por exemplo, se passarmos como parâmetro "banana" e "chocolate" a função deve retornar "chocolate"
-
-function maiorPalavra(str1 , str2){
-  let palavra1 = str1.lenght
-  let palavra2 = str2.lenght
-  if (palavra1 > palavra2){
-    console.log(str1)
-  }else {
-    console.log(str2)
-  }
-} 
-maiorPalavra('Banana','Chocolate')
-

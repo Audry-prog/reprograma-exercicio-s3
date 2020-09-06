@@ -1,13 +1,4 @@
 function soma(numero1, numero2) {
-
-    const somaTotal = numero1 + numero2
-    const nome = olar("Jessica")
-    return `o resultado é ${somaTotal}, ${nome}`
-}
-
-function olar(nome) {
-    return `oi ${nome}!`
-=======
   const somaTotal = numero1 + numero2
   const nome = olar("Jessica")
   return `o resultado é ${somaTotal}, ${nome}`
@@ -15,30 +6,20 @@ function olar(nome) {
 
 function olar(nome) {
   return `oi ${nome}!`
-
 }
 
 ///////////////////////////////////
 
 let numeroWhile = 13
 while (numeroWhile <= 12) {
-
-    // console.log("numero while", numeroWhile)
-    numeroWhile++
-=======
   // console.log("numero while", numeroWhile)
   numeroWhile++
 }
 
 let numeroDo = 0
 do {
-
-    // console.log("numero do", numeroDo)
-    numeroDo++
-=======
   // console.log("numero do", numeroDo)
   numeroDo++
-
 } while (numeroDo < 2)
 
 ///////////////////////////////////
@@ -46,11 +27,7 @@ do {
 //   inicial      12    true/false    o que acontece depois
 
 for (let numero = 50; numero >= 0; numero = numero - 5) {
-
-    // console.log(numero)
-=======
-  // console.log(numero)
-
+  console.log(numero)
 }
 // VALOR DE numero:   13
 
@@ -59,7 +36,7 @@ for (let numero = 50; numero >= 0; numero = numero - 5) {
 //3 - QUANDO QUEREMOS QUE PARE
 
 const nome = "Juliana"
-// console.log("console do nome", nome.length)
+console.log("console do nome", nome.length)
 
 /////////////////////////
 
@@ -71,17 +48,6 @@ const nome = "Juliana"
 // 5. Se nenhum parâmetro for passado, retorne "não recebeu parâmetro"
 
 function recebeTresParametros(param1, param2, param3) {
-
-    if (param1 != undefined && param2 === undefined && param3 === undefined) {
-        return param1
-    } else if (param1 != undefined && param2 != undefined && param3 === undefined) {
-        return param1 + param2
-    } else if (param1 != undefined && param2 != undefined && param3 != undefined) {
-        return (param1 + param2) / param3
-    } else {
-        return "não recebeu parâmetro"
-    }
-=======
   if (param1 != undefined && param2 === undefined && param3 === undefined) {
     return param1
   } else if (param1 != undefined && param2 != undefined && param3 === undefined) {
@@ -91,10 +57,9 @@ function recebeTresParametros(param1, param2, param3) {
   } else {
     return "não recebeu parâmetro"
   }
-
 }
 
-console.log(recebeTresParametros(2, 2, 2))
+console.log(recebeTresParametros(2, 2, 2)) // 2
 
 
 /////////////////////////
@@ -102,14 +67,10 @@ console.log(recebeTresParametros(2, 2, 2))
 // imprimir na tela os números de 0 a 10
 
 //   inicial         enquanto      depois de cada loop
-
 for (let numero = 0; numero <= 10; numero++) {
-
-    console.log("sei lá quantas vezes vai rodar")
-}
-=======
   console.log("sei lá quantas vezes vai rodar")
 }
+
 
 
 

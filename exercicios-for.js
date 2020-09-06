@@ -2,12 +2,6 @@ const input = require('readline-sync')
 
 // 1) crie uma função que receba uma string e devolva seu valor em letras maiúsculas, separadas por um espaço. Exemplo: 'banana' -> 'B A N A N A'
 
-function espaco(palavra) {
-    let resultado = ''
-    for (let x = 0; x < palavra.length; x++) {
-        resultado += (`${palavra[x].toUpperCase()} `)
-    } return resultado
-
 function espaco(palavra){
 let resultado = ''
 for (let x = 0; x < palavra.length; x++){
@@ -27,7 +21,7 @@ function soma(num) {
     }
     return total
   }
-console.log (soma(4))
+   console.log (soma(4))
 
 // 3) crie um programa que pergunta seu nome. Depois que digitar o nome, o programa deverá responder 'Olá [nome]'.
 // Enquanto digitar qualquer palavra, print o que foi digitado mas avise que, para sair, é só dizer 'Tchau'.
@@ -56,7 +50,6 @@ function contagemRegressiva(numInicial, numFinal) {
   for (let i = numInicial; i >= numFinal; i -= 2) {
     console.log(i)
   }
-
 }
 
 contagemRegressiva(20, 0)
@@ -92,7 +85,6 @@ console.log(recebeNum(15))
 // 14
 // biscoito de banana
 
-
 function biscoitodeBanana(num) {
     let total = 1
 
@@ -108,8 +100,8 @@ function biscoitodeBanana(num) {
         }
     }
 
-
-} console.log(biscoitodeBanana(20))
+} 
+console.log(biscoitodeBanana(20))
 
 // 7) crie uma função que receba um número positivo inteiro, itere de 1 ao número e some SOMENTE todos os números múltiplos de 3 OU 5. Por exemplo, recebendo 15, o valor retornado deverá ser 60, ou seja, a soma de todos os números múltiplos de 3 ou 5 entre 0 e 15 (3 + 5 + 6, etc).
 
@@ -123,7 +115,6 @@ function somaTresOuCinco(num) {
     }
   }
   return soma
-
 }
 
 console.log(somaTresOuCinco(15))
@@ -176,12 +167,12 @@ escadinha(10)
 function estrelaInversa(num){
   let espaco = ' '
   let resposta = ' '
-  for(let i = 0; i <= num; i++){
-    for(let j = num - i; j >= 1; j--){
+  
+  for (let i = 0; i <= num; i++) {
+    for (let j = num - i; j >= 1; j--) {
       espaco += ' '
     } resposta += '*'
   console.log(espaco + resposta)
   espaco = ' '
   }
-} 
-estrelaInversa(10); 
+} estrelaInversa(10) 
